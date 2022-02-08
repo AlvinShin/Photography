@@ -1,0 +1,40 @@
+.port-pg {
+    padding-top: 4rem;
+}
+
+.img-div {
+    margin: 5rem auto 5rem auto;
+    width: 25rem;
+    border-radius: 25px;
+    box-shadow: 2px 0 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgDim {
+    user-select: none;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+}
+
+.imgDet-div {
+    padding: 0 1rem 0 1rem;
+    user-select: none;
+    padding: 1.5rem;
+    height: max-content;
+    float: center;
+    background-color: #fff;
+    font-size: 0.8rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .img-div {
+        width: 20rem;
+    }
+    
+}

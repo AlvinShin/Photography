@@ -1,0 +1,144 @@
+.about-page {
+    height: 100%;
+    padding-top: 15vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.header {
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+    height: 3.2rem;
+}
+
+.section-div {
+    padding-bottom: 1rem;
+}
+
+.pfp-div {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.pfp {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.name-div {
+    margin-left: 1rem;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name-txt {
+    font-size: 30px;
+}
+
+.txt-div {
+    margin-top: 1rem;
+}
+
+.txt {
+    font-size: 22px;
+}
+
+.gearUl, .webUl {
+    font-size: 20px;
+}
+
+.webUl {
+    align-items: center;
+    list-style-type: none;
+    margin-left: -2rem;
+}
+
+.res-row {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.res-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.react {
+    font-size: 1.5rem;
+}
+.btn-div {
+    margin: 1rem 0 0 1rem;
+}
+
+.buy-btn {
+    color: black;
+    background-color: rgb(226, 226, 226);
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.socUl {
+    list-style-type: none;
+    width: fit-content;
+    font-size: 20px;
+    margin-left: -2rem;
+}
+
+.socLi {
+    margin-bottom: 0.9rem;
+}
+
+.icon-anchor {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.icon-about {
+    margin-right: 1rem;
+    text-decoration: none;
+    float: left;
+    color: #000;
+    font-size: 2rem;
+}
+
+.discord {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 602px) {
+    .about-page {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .name-txt {
+        font-size: 23px;
+    }
+    .txt {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .name-txt {
+        font-size: 21px;
+    }
+    .txt {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .name-txt {
+        font-size: 17px;
+    }
+    .txt {
+        font-size: 16px;
+    }
+}

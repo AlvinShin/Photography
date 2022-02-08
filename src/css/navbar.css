@@ -1,0 +1,123 @@
+nav * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+nav {
+    z-index: 10;
+    user-select: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #2d2d2d;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    width: min-content;
+    list-style: none;
+}
+
+.nav-links a {
+    width: min-content;
+    text-transform: uppercase;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+        position: fixed; 
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: left;
+        top: 8vh;
+        background-color: #2d2d2d;
+        width: 100%;
+        transform: translateY(-120%);
+        transition: transform 0.3s ease-in;
+    } 
+    .nav-links li {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateY(-7%);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    transition: transform 0.15s ease-in;
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5.2px, -6px);
+    transition: transform 0.15s ease-in;
+}
+
+.untoggle .line1 {
+    transform: rotate(0) translate(0, 0);
+    transition: transform 0.15s ease-in;
+}
+.untoggle .line2 {
+    animation-name: fadeIn;
+    animation-duration: 0.15s;
+    transition: transform 0.15s ease-in;
+}
+.untoggle .line3 {
+    transform: rotate(0) translate(0, 0);
+    transition: transform 0.15s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
